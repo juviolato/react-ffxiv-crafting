@@ -1,0 +1,461 @@
+[
+  {
+    "ID": 39651,
+    "GamePatch": {
+      "Name": "Patch 6.4"
+    },
+    "Name_de": "Diadochen-Jacke der Verteidigung",
+    "Name_en": "Diadochos Jacket of Fending",
+    "Name_fr": "Jaque de protecteur de diadoque",
+    "Name_ja": "\u30C7\u30A3\u30A2\u30C9\u30B3\u30B9\u30FB\u30C7\u30A3\u30D5\u30A7\u30F3\u30C0\u30FC\u30B8\u30E3\u30B1\u30C3\u30C8",
+    "LevelEquip": 90,
+    "LevelItem": 640,
+    "Stats": {
+      "CriticalHit": {
+        "HQ": 196,
+        "ID": 27,
+        "NQ": 176
+      },
+      "Determination": {
+        "HQ": 280,
+        "ID": 44,
+        "NQ": 252
+      },
+      "Strength": {
+        "HQ": 354,
+        "ID": 1,
+        "NQ": 319
+      },
+      "Vitality": {
+        "HQ": 387,
+        "ID": 3,
+        "NQ": 348
+      }
+    },
+    "Icon": "/i/042000/042962.png",
+    "IconHD": "/i/042000/042962_hr1.png",
+    "IconID": 42962,
+    "ItemUICategory": {
+      "ID": 35,
+      "Icon": "/i/060000/060126.png",
+      "IconHD": "/i/060000/060126_hr1.png",
+      "IconID": 60126,
+      "Name": "Body",
+      "Name_de": "Rumpf",
+      "Name_en": "Body",
+      "Name_fr": "Torse",
+      "Name_ja": "\u80F4\u9632\u5177",
+      "OrderMajor": 3,
+      "OrderMinor": 2
+    },
+    "Recipes": [
+      {
+        "ClassJobID": 12,
+        "ID": 35520,
+        "Level": 90
+      }
+    ],
+    "Url": "/Item/39651"
+  },
+  {
+    "GamePatch": {
+      "Name": "Patch 6.4"
+    },
+    "ID": 39721,
+    "Icon": "/i/021000/021831.png",
+    "IconHD": "/i/021000/021831_hr1.png",
+    "IconID": 21831,
+    "ItemUICategory": {
+      "ID": 52,
+      "Icon": "/i/060000/060143.png",
+      "IconHD": "/i/060000/060143_hr1.png",
+      "IconID": 60143,
+      "Name": "Leather",
+      "Name_de": "Leder",
+      "Name_en": "Leather",
+      "Name_fr": "Cuir",
+      "Name_ja": "\u76AE\u9769\u6750",
+      "OrderMajor": 6,
+      "OrderMinor": 6
+    },
+    "LevelEquip": 1,
+    "LevelItem": 640,
+    "Name_de": "Deinosuchus-Leder",
+    "Name_en": "Deinosuchus Leather",
+    "Name_fr": "Cuir de deinosuchus",
+    "Name_ja": "\u30C7\u30A4\u30CE\u30B9\u30AF\u30B9\u30EC\u30B6\u30FC",
+    "Recipes": [
+      {
+        "ClassJobID": 12,
+        "ID": 35579,
+        "Level": 90
+      }
+    ],
+    "Stats": null,
+    "Url": "/Item/39721"
+  },
+  {
+    "GamePatch": {
+      "Name": "Patch 6.4"
+    },
+    "ID": 39718,
+    "Icon": "/i/020000/020803.png",
+    "IconHD": "/i/020000/020803_hr1.png",
+    "IconID": 20803,
+    "ItemUICategory": {
+      "ID": 49,
+      "Icon": "/i/060000/060140.png",
+      "IconHD": "/i/060000/060140_hr1.png",
+      "IconID": 60140,
+      "Name": "Metal",
+      "Name_de": "Metall",
+      "Name_en": "Metal",
+      "Name_fr": "M\u00E9tal",
+      "Name_ja": "\u91D1\u5C5E\u6750",
+      "OrderMajor": 6,
+      "OrderMinor": 3
+    },
+    "LevelEquip": 1,
+    "LevelItem": 640,
+    "Name_de": "Weichsilber-Barren",
+    "Name_en": "Softsilver Ingot",
+    "Name_fr": "Lingot d'argent ductile",
+    "Name_ja": "\u30BD\u30D5\u30C8\u30B7\u30EB\u30D0\u30FC\u30A4\u30F3\u30B4\u30C3\u30C8",
+    "Recipes": [
+      {
+        "ClassJobID": 9,
+        "ID": 35575,
+        "Level": 90
+      },
+      {
+        "ClassJobID": 10,
+        "ID": 35576,
+        "Level": 90
+      }
+    ],
+    "Stats": null,
+    "Url": "/Item/39718"
+  },
+  {
+    "GamePatch": {
+      "Name": "Patch 6.0"
+    },
+    "ID": 36251,
+    "Icon": "/i/022000/022008.png",
+    "IconHD": "/i/022000/022008_hr1.png",
+    "IconID": 22008,
+    "ItemUICategory": {
+      "ID": 52,
+      "Icon": "/i/060000/060143.png",
+      "IconHD": "/i/060000/060143_hr1.png",
+      "IconID": 60143,
+      "Name": "Leather",
+      "Name_de": "Leder",
+      "Name_en": "Leather",
+      "Name_fr": "Cuir",
+      "Name_ja": "\u76AE\u9769\u6750",
+      "OrderMajor": 6,
+      "OrderMinor": 6
+    },
+    "LevelEquip": 1,
+    "LevelItem": 545,
+    "Name_de": "Ophiotauros-Leder",
+    "Name_en": "Ophiotauros Leather",
+    "Name_fr": "Cuir d'ophiotauros",
+    "Name_ja": "\u30AA\u30D4\u30AA\u30BF\u30A6\u30ED\u30B9\u30EC\u30B6\u30FC",
+    "Recipes": [
+      {
+        "ClassJobID": 12,
+        "ID": 5322,
+        "Level": 88
+      }
+    ],
+    "Stats": null,
+    "Url": "/Item/36251"
+  },
+  {
+    "GamePatch": {
+      "Name": "Patch 6.4"
+    },
+    "ID": 39724,
+    "Icon": "/i/022000/022680.png",
+    "IconHD": "/i/022000/022680_hr1.png",
+    "IconID": 22680,
+    "ItemUICategory": {
+      "ID": 54,
+      "Icon": "/i/060000/060145.png",
+      "IconHD": "/i/060000/060145_hr1.png",
+      "IconID": 60145,
+      "Name": "Reagent",
+      "Name_de": "Reagenz",
+      "Name_en": "Reagent",
+      "Name_fr": "R\u00E9actif",
+      "Name_ja": "\u932C\u91D1\u8853\u6750",
+      "OrderMajor": 6,
+      "OrderMinor": 8
+    },
+    "LevelEquip": 1,
+    "LevelItem": 640,
+    "Name_de": "Visionsl\u00F6sung der Konstitution VIII",
+    "Name_en": "Grade 8 Vitality Alkahest",
+    "Name_fr": "Eau chim\u00E9rique de vitalit\u00E9 VIII",
+    "Name_ja": "\u6D3B\u529B\u306E\u5E7B\u6C34G8",
+    "Recipes": [
+      {
+        "ClassJobID": 14,
+        "ID": 35582,
+        "Level": 90
+      }
+    ],
+    "Stats": null,
+    "Url": "/Item/39724"
+  },
+  {
+    "GamePatch": {
+      "Name": "Patch 6.3"
+    },
+    "ID": 38936,
+    "Icon": "/i/021000/021246.png",
+    "IconHD": "/i/021000/021246_hr1.png",
+    "IconID": 21246,
+    "ItemUICategory": {
+      "ID": 54,
+      "Icon": "/i/060000/060145.png",
+      "IconHD": "/i/060000/060145_hr1.png",
+      "IconID": 60145,
+      "Name": "Reagent",
+      "Name_de": "Reagenz",
+      "Name_en": "Reagent",
+      "Name_fr": "R\u00E9actif",
+      "Name_ja": "\u932C\u91D1\u8853\u6750",
+      "OrderMajor": 6,
+      "OrderMinor": 8
+    },
+    "LevelEquip": 1,
+    "LevelItem": 600,
+    "Name_de": "Erdsto\u00DF-Seelensand",
+    "Name_en": "Earthbreak Aethersand",
+    "Name_fr": "Sable du grondement terrestre",
+    "Name_ja": "\u5730\u9CF4\u306E\u970A\u7802",
+    "Recipes": null,
+    "Stats": null,
+    "Url": "/Item/38936"
+  },
+  {
+    "GamePatch": {
+      "Name": "Patch 2.0: A Realm Reborn"
+    },
+    "ID": 17,
+    "Icon": "/i/020000/020018.png",
+    "IconHD": "/i/020000/020018_hr1.png",
+    "IconID": 20018,
+    "ItemUICategory": {
+      "ID": 59,
+      "Icon": "/i/060000/060151.png",
+      "IconHD": "/i/060000/060151_hr1.png",
+      "IconID": 60151,
+      "Name": "Crystal",
+      "Name_de": "Kristall",
+      "Name_en": "Crystal",
+      "Name_fr": "Cristal",
+      "Name_ja": "\u30AF\u30EA\u30B9\u30BF\u30EB",
+      "OrderMajor": 7,
+      "OrderMinor": 1
+    },
+    "LevelEquip": 1,
+    "LevelItem": 50,
+    "Name_de": "Erdpolykristall",
+    "Name_en": "Earth Cluster",
+    "Name_fr": "Agr\u00E9gat de terre",
+    "Name_ja": "\u30A2\u30FC\u30B9\u30AF\u30E9\u30B9\u30BF\u30FC",
+    "Recipes": null,
+    "Stats": null,
+    "Url": "/Item/17"
+  },
+  {
+    "GamePatch": {
+      "Name": "Patch 2.0: A Realm Reborn"
+    },
+    "ID": 16,
+    "Icon": "/i/020000/020016.png",
+    "IconHD": "/i/020000/020016_hr1.png",
+    "IconID": 20016,
+    "ItemUICategory": {
+      "ID": 59,
+      "Icon": "/i/060000/060151.png",
+      "IconHD": "/i/060000/060151_hr1.png",
+      "IconID": 60151,
+      "Name": "Crystal",
+      "Name_de": "Kristall",
+      "Name_en": "Crystal",
+      "Name_fr": "Cristal",
+      "Name_ja": "\u30AF\u30EA\u30B9\u30BF\u30EB",
+      "OrderMajor": 7,
+      "OrderMinor": 1
+    },
+    "LevelEquip": 1,
+    "LevelItem": 50,
+    "Name_de": "Windpolykristall",
+    "Name_en": "Wind Cluster",
+    "Name_fr": "Agr\u00E9gat de vent",
+    "Name_ja": "\u30A6\u30A3\u30F3\u30C9\u30AF\u30E9\u30B9\u30BF\u30FC",
+    "Recipes": null,
+    "Stats": null,
+    "Url": "/Item/16"
+  },
+  {
+    "GamePatch": {
+      "Name": "Patch 6.4"
+    },
+    "ID": 39709,
+    "Icon": "/i/022000/022696.png",
+    "IconHD": "/i/022000/022696_hr1.png",
+    "IconID": 22696,
+    "ItemUICategory": {
+      "ID": 54,
+      "Icon": "/i/060000/060145.png",
+      "IconHD": "/i/060000/060145_hr1.png",
+      "IconID": 60145,
+      "Name": "Reagent",
+      "Name_de": "Reagenz",
+      "Name_en": "Reagent",
+      "Name_fr": "R\u00E9actif",
+      "Name_ja": "\u932C\u91D1\u8853\u6750",
+      "OrderMajor": 6,
+      "OrderMinor": 8
+    },
+    "LevelEquip": 1,
+    "LevelItem": 640,
+    "Name_de": "\u00D6lr\u00FCbsen",
+    "Name_en": "Field Mustard",
+    "Name_fr": "Navette",
+    "Name_ja": "\u30A2\u30D6\u30E9\u30CA",
+    "Recipes": null,
+    "Stats": null,
+    "Url": "/Item/39709"
+  },
+  {
+    "GamePatch": {
+      "Name": "Patch 2.0: A Realm Reborn"
+    },
+    "ID": 15,
+    "Icon": "/i/020000/020015.png",
+    "IconHD": "/i/020000/020015_hr1.png",
+    "IconID": 20015,
+    "ItemUICategory": {
+      "ID": 59,
+      "Icon": "/i/060000/060151.png",
+      "IconHD": "/i/060000/060151_hr1.png",
+      "IconID": 60151,
+      "Name": "Crystal",
+      "Name_de": "Kristall",
+      "Name_en": "Crystal",
+      "Name_fr": "Cristal",
+      "Name_ja": "\u30AF\u30EA\u30B9\u30BF\u30EB",
+      "OrderMajor": 7,
+      "OrderMinor": 1
+    },
+    "LevelEquip": 1,
+    "LevelItem": 50,
+    "Name_de": "Eispolykristall",
+    "Name_en": "Ice Cluster",
+    "Name_fr": "Agr\u00E9gat de glace",
+    "Name_ja": "\u30A2\u30A4\u30B9\u30AF\u30E9\u30B9\u30BF\u30FC",
+    "Recipes": null,
+    "Stats": null,
+    "Url": "/Item/15"
+  },
+  {
+    "GamePatch": {
+      "Name": "Patch 2.0: A Realm Reborn"
+    },
+    "ID": 11,
+    "Icon": "/i/020000/020012.png",
+    "IconHD": "/i/020000/020012_hr1.png",
+    "IconID": 20012,
+    "ItemUICategory": {
+      "ID": 59,
+      "Icon": "/i/060000/060151.png",
+      "IconHD": "/i/060000/060151_hr1.png",
+      "IconID": 60151,
+      "Name": "Crystal",
+      "Name_de": "Kristall",
+      "Name_en": "Crystal",
+      "Name_fr": "Cristal",
+      "Name_ja": "\u30AF\u30EA\u30B9\u30BF\u30EB",
+      "OrderMajor": 7,
+      "OrderMinor": 1
+    },
+    "LevelEquip": 1,
+    "LevelItem": 25,
+    "Name_de": "Erdkristall",
+    "Name_en": "Earth Crystal",
+    "Name_fr": "Cristal de terre",
+    "Name_ja": "\u30A2\u30FC\u30B9\u30AF\u30EA\u30B9\u30BF\u30EB",
+    "Recipes": null,
+    "Stats": null,
+    "Url": "/Item/11"
+  },
+  {
+    "GamePatch": {
+      "Name": "Patch 2.0: A Realm Reborn"
+    },
+    "ID": 19,
+    "Icon": "/i/020000/020014.png",
+    "IconHD": "/i/020000/020014_hr1.png",
+    "IconID": 20014,
+    "ItemUICategory": {
+      "ID": 59,
+      "Icon": "/i/060000/060151.png",
+      "IconHD": "/i/060000/060151_hr1.png",
+      "IconID": 60151,
+      "Name": "Crystal",
+      "Name_de": "Kristall",
+      "Name_en": "Crystal",
+      "Name_fr": "Cristal",
+      "Name_ja": "\u30AF\u30EA\u30B9\u30BF\u30EB",
+      "OrderMajor": 7,
+      "OrderMinor": 1
+    },
+    "LevelEquip": 1,
+    "LevelItem": 50,
+    "Name_de": "Wasserpolykristall",
+    "Name_en": "Water Cluster",
+    "Name_fr": "Agr\u00E9gat d'eau",
+    "Name_ja": "\u30A6\u30A9\u30FC\u30BF\u30FC\u30AF\u30E9\u30B9\u30BF\u30FC",
+    "Recipes": null,
+    "Stats": null,
+    "Url": "/Item/19"
+  },
+  {
+    "GamePatch": {
+      "Name": "Patch 2.0: A Realm Reborn"
+    },
+    "ID": 18,
+    "Icon": "/i/020000/020017.png",
+    "IconHD": "/i/020000/020017_hr1.png",
+    "IconID": 20017,
+    "ItemUICategory": {
+      "ID": 59,
+      "Icon": "/i/060000/060151.png",
+      "IconHD": "/i/060000/060151_hr1.png",
+      "IconID": 60151,
+      "Name": "Crystal",
+      "Name_de": "Kristall",
+      "Name_en": "Crystal",
+      "Name_fr": "Cristal",
+      "Name_ja": "\u30AF\u30EA\u30B9\u30BF\u30EB",
+      "OrderMajor": 7,
+      "OrderMinor": 1
+    },
+    "LevelEquip": 1,
+    "LevelItem": 50,
+    "Name_de": "Blitzpolykristall",
+    "Name_en": "Lightning Cluster",
+    "Name_fr": "Agr\u00E9gat de foudre",
+    "Name_ja": "\u30E9\u30A4\u30C8\u30CB\u30F3\u30B0\u30AF\u30E9\u30B9\u30BF\u30FC",
+    "Recipes": null,
+    "Stats": null,
+    "Url": "/Item/18"
+  }
+]
