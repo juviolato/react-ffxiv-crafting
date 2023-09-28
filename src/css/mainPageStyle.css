@@ -1,0 +1,25 @@
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  direction: ltr;
+  flex-grow: 1;
+}
+
+.mainPageHeader {
+}
+
+.mainPageToolbar {
+  padding: 1em;
+}
+
+.pageSection {
+  border-bottom: solid 1px #CCCCCC;
+}
+
+.pageTitle {
+  display: inline-block;
+  margin-left: 0.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

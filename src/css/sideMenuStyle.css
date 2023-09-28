@@ -1,0 +1,64 @@
+.sideMenu {
+  overflow: hidden;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  border-left: solid 1px #CCCCCC;
+  direction: ltr;
+  height: 100%;
+  align-items: stretch;
+}
+
+.header {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+}
+
+.inputField {
+  height: 24px;
+  font-size: 14px;
+  margin: 1em 2em;
+}
+
+.sideMenuContents {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemList {
+  align-items: center;
+  flex-grow: 1;
+  margin: 0em;
+}
+
+.itemList ul {
+  list-style-type: none;
+}
+
+.itemCard {
+  border: solid 1px;
+  border-radius: 2.5px;
+  margin: 1.5em 2em 1em 0em;
+  padding: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.itemCard:hover {
+  background-color: #DDDDDD;
+  cursor: pointer;
+}
+
+.itemName {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.itemCategory {
+  font-size: 14px;
+  opacity: 0.7;
+}
