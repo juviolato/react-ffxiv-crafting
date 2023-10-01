@@ -12,7 +12,7 @@ function Toolbar(props) {
   }
 
   return (
-    <div className="mainPageToolbar pageSection">
+    <div className="mainPageToolbar">
       <Popup trigger={
         <button className="pageButton">
           <FiPlus />
@@ -20,9 +20,9 @@ function Toolbar(props) {
         </button>
       } modal nested>
         {close => (
-          <div className="popup">
-            <div className="popupHeader pageSection">New crafting list</div>
-            <div className="popupContent pageSection">
+          <div className="card">
+            <div className="header">New crafting list</div>
+            <div className="popupContent">
               <input
                 className="inputField"
                 type="text"

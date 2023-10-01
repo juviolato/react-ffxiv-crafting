@@ -1,8 +1,10 @@
 function ItemCard(props) {
   return (
-    <div className="itemCard displayText">
-          <div className="itemName">{props.item.Name_en}</div>
-          <div className="itemCategory">{props.item.ItemUICategory.Name_en}</div>
+    <div className="displayText card itemCard">
+      <div className="cardContent">
+        <div className="itemName">{props.item.Name_en}</div>
+        <div className="subtitle">{props.item.ItemUICategory.Name_en}</div>
+      </div>
     </div>
   )
 }

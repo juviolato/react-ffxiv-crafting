@@ -2,7 +2,7 @@ import "../css/mainPageStyle.css";
 
 function Header(props) {
   return (
-    <div className="mainPageHeader pageSection">
+    <div className="header">
       <h1 className="pageTitle">FFXIV CRAFTING</h1>
     </div>
   )

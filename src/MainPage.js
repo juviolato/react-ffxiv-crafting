@@ -13,7 +13,7 @@ import Recipes from "./mockAPI/Recipes.json";
 function MainPage() {
   const [searchInput, setSearchInput] = useState("");
   const [craftingLists, setCraftingLists] = useState([]);
-  const itemsList = Items.filter((item) => {
+  const itemsList = Object.values(Items[0]).filter((item) => {
     return item.Name_en.toLowerCase().match(searchInput.toLowerCase())
   });
   
@@ -22,14 +22,27 @@ function MainPage() {
     setSearchInput(searchTerm.target.value);
   }
 
-  const handleClickItem = (ID) => {
-    console.log("Item clicked: ", ID);
+  const handleClickItem = (listID, itemID) => {
+    // TO-DO: allow multiple of one item per list
+    const selectedItem = Items[0][itemID];
+    const list = craftingLists.find((list) => list.ID === listID);
+    if (!list.items[itemID]) {
+      list.items[itemID] = selectedItem;
+    }
+    setCraftingLists(craftingLists);
   }
 
   const handleConfirmNewCraftingList = (newListName) => {
+    // this works for now for a low number of lists but TO-DO: better list ID system
+    let listID = 0;
+    while (craftingLists.find((list) => list.ID === listID)) {
+      listID += 1;
+    }
+
     let newList = {
       listName: newListName,
-      items: []
+      ID: listID,
+      items: {}
     }
     setCraftingLists(current => [...current, newList]);
   }
@@ -39,6 +52,7 @@ function MainPage() {
       <Fragment>
         <SideMenu 
           itemsList={itemsList}
+          availableLists={craftingLists}
           onClickItem={handleClickItem}
           searchInput={searchInput}
           onItemSearch={handleItemSearch}

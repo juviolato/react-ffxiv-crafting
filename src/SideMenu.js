@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Sidebar, Menu } from "react-pro-sidebar";
+import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import "./css/sideMenuStyle.css";
 import ItemList from "./components/ItemList";
 import CollapseMenuHeader from "./components/CollapseMenuHeader";
@@ -12,12 +12,14 @@ function SideMenu(props) {
     setCollapsed(!collapsed);
   }
 
+  // TO-DO: make side menu header sticky
+  // TO-DO: show which recipes an item is used in
   return (
     <div className="sideMenu">
       <Sidebar
         collapsed={collapsed}
         handleCollapseChange={handleCollapse}
-        width="100%"
+        width="28rem"
       >
         <div className="sideMenuContents">
           <Menu>
@@ -29,7 +31,11 @@ function SideMenu(props) {
             />
           </Menu>
           <Menu className="itemList">
-            <ItemList items={props.itemsList} onClickItem={props.onClickItem} />
+            <ItemList
+              items={props.itemsList}
+              availableLists={props.availableLists}
+              onClickItem={props.onClickItem}
+            />
           </Menu>
         </div>
       </Sidebar>

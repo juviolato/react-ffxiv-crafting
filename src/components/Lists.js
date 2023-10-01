@@ -1,10 +1,13 @@
 import React from "react";
+import ListCard from "./ListCard";
 
 function Lists(props) {
   return (
-    <ul>
-      {props.lists.map((list) => <li key={list.ID}>{list.listName}</li>)}
-    </ul>
+    <div className="itemList">
+      <ul>
+        {props.lists.map((list) => <li key={list.ID}><ListCard list={list}/></li>)}
+      </ul>
+    </div>
   )
 }
 

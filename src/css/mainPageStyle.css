@@ -7,13 +7,6 @@
 
 .mainPageToolbar {
   padding: 1em;
-}
-
-.pageButton {
-  
-}
-
-.pageSection {
   border-bottom: solid 1px #CCCCCC;
 }
 
@@ -31,11 +24,6 @@
   text-overflow: ellipsis;
 }
 
-.popup {
-  border: solid 1px #CCCCCC;
-  border-radius: 2.5px;
-}
-
 .popupHeader {
   padding: 0.5rem 0.5rem 0.5rem;
 }
@@ -43,4 +31,38 @@
 .popupActions {
   direction: rtl;
   padding: 0.5rem;
+}
+
+.card { 
+  border: solid 1px #CCCCCC;
+  border-radius: 2.5px;
+  margin: 1.5em 2em 1em 0em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.cardContent {
+  padding: 1em;
+}
+
+.allowOverflow {
+  position: fixed;
+}
+
+.header {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  border-bottom: solid 1px #CCCCCC;
+  padding: 0.5rem 0.5rem 0.5rem;
+}
+
+.subtitle {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.pageButton {
+  width: 18rem;
 }

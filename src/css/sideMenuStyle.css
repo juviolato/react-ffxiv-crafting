@@ -8,14 +8,6 @@
   direction: ltr;
   height: 100%;
   align-items: stretch;
-  width: 28rem;
-}
-
-.header {
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 0;
 }
 
 .sideMenuContents {
@@ -33,16 +25,6 @@
   list-style-type: none;
 }
 
-.itemCard {
-  border: solid 1px;
-  border-radius: 2.5px;
-  margin: 1.5em 2em 1em 0em;
-  padding: 1em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .itemCard:hover {
   background-color: #DDDDDD;
   cursor: pointer;
@@ -53,7 +35,3 @@
   font-size: 15px;
 }
 
-.itemCategory {
-  font-size: 14px;
-  opacity: 0.7;
-}
