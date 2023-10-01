@@ -1,25 +1,15 @@
 import React, { useState } from "react";
 import { Sidebar, Menu } from "react-pro-sidebar";
 import "./css/sideMenuStyle.css";
-import Items from "./mockAPI/Items.json";
-import ItemCard from "./components/ItemCard";
+import ItemList from "./components/ItemList";
 import CollapseMenuHeader from "./components/CollapseMenuHeader";
 
 
-function SideMenu() {
+function SideMenu(props) {
   const [collapsed, setCollapsed] = useState(false);
-  const [searchInput, setSearchInput] = useState("");
-  const itemsList = Items
-    .filter((item) => { return item.Name_en.toLowerCase().match(searchInput.toLowerCase())})
-    .map((item) => <li key={item.ID}><ItemCard item={item}/></li>);
 
   const handleCollapse = () => {
     setCollapsed(!collapsed);
-  }
-
-  const handleItemSearch = (searchTerm) => {
-    searchTerm.preventDefault();
-    setSearchInput(searchTerm.target.value);
   }
 
   return (
@@ -27,21 +17,19 @@ function SideMenu() {
       <Sidebar
         collapsed={collapsed}
         handleCollapseChange={handleCollapse}
-        width="22rem"
+        width="100%"
       >
         <div className="sideMenuContents">
           <Menu>
             <CollapseMenuHeader 
               collapsed={collapsed}
               onCollapse={handleCollapse}
-              searchInput={searchInput}
-              onItemSearch={handleItemSearch}
+              searchInput={props.searchInput}
+              onItemSearch={props.onItemSearch}
             />
           </Menu>
           <Menu className="itemList">
-            <div>
-              <ul>{itemsList}</ul>
-            </div>
+            <ItemList items={props.itemsList} onClickItem={props.onClickItem} />
           </Menu>
         </div>
       </Sidebar>

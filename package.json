@@ -43,6 +43,8 @@
   },
   "devDependencies": {
     "react-box-layout": "^2.0.7",
-    "react-native": "^0.72.5"
+    "react-native": "^0.72.5",
+    "react-popup": "^0.11.2",
+    "reactjs-popup": "^2.0.6"
   }
 }
