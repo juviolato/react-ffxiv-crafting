@@ -35,3 +35,12 @@
   font-size: 15px;
 }
 
+.errorMessage {
+  border: solid 1px rgba(255, 0, 0, 0.5);
+  border-radius: 3px;
+  background-color: rgba(255, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem;
+  margin-bottom: 0;
+  color: red;
+}

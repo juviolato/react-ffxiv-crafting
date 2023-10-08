@@ -33,6 +33,10 @@
   padding: 0.5rem;
 }
 
+.popupActions button {
+  margin-right: 0.5rem;
+}
+
 .card { 
   border: solid 1px #CCCCCC;
   border-radius: 2.5px;

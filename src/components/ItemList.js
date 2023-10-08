@@ -4,7 +4,7 @@ import Popup from "reactjs-popup";
 import Select from "react-select";
 
 function ItemList(props) {
-  const [selectedList, setSelectedList] = useState("");
+  const [selectedList, setSelectedList] = useState(-1);
   const listOptions = props.availableLists.map((list) => ({ ID: list.ID, label: list.listName }));
 
   const handleChangeOption = (selectedOption) => {
@@ -23,6 +23,12 @@ function ItemList(props) {
           {close => (
             <div className="card">
               <div className="header">{item.Name_en}</div>
+              {props.noListsError && (
+                <div className="errorMessage">No crafting list has been created.</div>
+              )}
+              {props.duplicateItemError && (
+                <div className="errorMessage">This item is already in the selected list.</div>
+              )}
               <div className="cardContent">
                 <Select
                   className="allowOverflow"
@@ -35,10 +41,15 @@ function ItemList(props) {
                 <button
                   className="confirmButton"
                   onClick={() => {
-                    props.onClickItem(selectedList, item.ID);
-                    close();
+                    props.onClickItem(selectedList, item.ID, close);
                   }}
                 >Add to list</button>
+                <button
+                  className="cancelButton"
+                  onClick={() => {
+                    close();
+                  }}
+                >Cancel</button>
               </div>
             </div>
           )}

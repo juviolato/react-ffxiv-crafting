@@ -13,6 +13,8 @@ import Recipes from "./mockAPI/Recipes.json";
 function MainPage() {
   const [searchInput, setSearchInput] = useState("");
   const [craftingLists, setCraftingLists] = useState([]);
+  const [duplicateItemError, setDuplicateItemError] = useState(false);
+  const [noListsError, setNoListsError] = useState(false);
   const itemsList = Object.values(Items[0]).filter((item) => {
     return item.Name_en.toLowerCase().match(searchInput.toLowerCase())
   });
@@ -22,14 +24,30 @@ function MainPage() {
     setSearchInput(searchTerm.target.value);
   }
 
-  const handleClickItem = (listID, itemID) => {
+  const handleClickItem = (listID, itemID, closePopup) => {
     // TO-DO: allow multiple of one item per list
+    // TO-DO: add fading error pop-up for no list selected
+    if (listID < 0) {
+      return;
+    }
+
+    if (!craftingLists.length) {
+      setNoListsError(true);
+      return;
+    }
+
+    setNoListsError(false);
     const selectedItem = Items[0][itemID];
     const list = craftingLists.find((list) => list.ID === listID);
+    console.log(list.items[itemID])
     if (!list.items[itemID]) {
       list.items[itemID] = selectedItem;
+      setDuplicateItemError(false);
+      setCraftingLists(craftingLists);
+      closePopup();
+    } else {
+      setDuplicateItemError(true);
     }
-    setCraftingLists(craftingLists);
   }
 
   const handleConfirmNewCraftingList = (newListName) => {
@@ -56,6 +74,8 @@ function MainPage() {
           onClickItem={handleClickItem}
           searchInput={searchInput}
           onItemSearch={handleItemSearch}
+          duplicateItemError={duplicateItemError}
+          noListsError={noListsError}
         />
       </Fragment>
       <Fragment>

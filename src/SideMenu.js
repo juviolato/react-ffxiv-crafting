@@ -35,6 +35,8 @@ function SideMenu(props) {
               items={props.itemsList}
               availableLists={props.availableLists}
               onClickItem={props.onClickItem}
+              duplicateItemError={props.duplicateItemError}
+              noListsError={props.noListsError}
             />
           </Menu>
         </div>
