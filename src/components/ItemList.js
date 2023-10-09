@@ -12,6 +12,7 @@ function ItemList(props) {
   }
 
   // TO-DO: add drag and drop option
+  // TO-DO: clear error messages when a new popup is opened
   return (
     <ul>
       {props.items.map((item) => 
@@ -21,23 +22,23 @@ function ItemList(props) {
           </li>
         } modal nested>
           {close => (
-            <div className="card">
+            <div className="card popup">
               <div className="header">{item.Name_en}</div>
-              {props.noListsError && (
-                <div className="errorMessage">No crafting list has been created.</div>
-              )}
-              {props.duplicateItemError && (
-                <div className="errorMessage">This item is already in the selected list.</div>
-              )}
-              <div className="cardContent">
+              <div className="popupContent">
+                {props.noListsError && (
+                  <div className="errorMessage">No crafting list has been created.</div>
+                )}
+                {props.duplicateItemError && (
+                  <div className="errorMessage">This item is already in the selected list.</div>
+                )}
                 <Select
-                  className="allowOverflow"
+                  className="selectField"
                   options={listOptions}
                   isSearchable="true"
                   onChange={handleChangeOption}
                 />
               </div>
-              <div className="popupActions">
+              <div className="actionButtons">
                 <button
                   className="confirmButton"
                   onClick={() => {

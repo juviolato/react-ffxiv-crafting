@@ -13,7 +13,7 @@
 .inputField {
   height: 24px;
   font-size: 14px;
-  margin: 1em 2em;
+  margin-right: 0.5rem;
 }
 
 .pageTitle {
@@ -28,12 +28,11 @@
   padding: 0.5rem 0.5rem 0.5rem;
 }
 
-.popupActions {
+.actionButtons {
   direction: rtl;
-  padding: 0.5rem;
 }
 
-.popupActions button {
+.actionButtons button {
   margin-right: 0.5rem;
 }
 
@@ -45,21 +44,38 @@
   text-overflow: ellipsis;
 }
 
+.popup {
+  background-color: #FFFFFF;
+  padding-bottom: 0.5rem;
+}
+
 .cardContent {
   padding: 1em;
 }
 
-.allowOverflow {
-  position: fixed;
+.popupContent {
+  margin: 1em 1.5em;
+}
+
+.selectField {
+  min-width: 12rem;
 }
 
 .header {
   font-weight: bold;
+  border-bottom: solid 1px #CCCCCC;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.vbox {
   display: flex;
   flex-direction: column;
-  flex-grow: 0;
-  border-bottom: solid 1px #CCCCCC;
-  padding: 0.5rem 0.5rem 0.5rem;
+}
+
+.hbox {
+  display: flex;
+  flex-direction: row;
 }
 
 .subtitle {
@@ -69,4 +85,53 @@
 
 .pageButton {
   width: 18rem;
+}
+
+.listButton {
+  border: none;
+  background: none;
+  border-radius: 2px;
+  font-size: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #CCCCCC;
+}
+
+.sideMenu {
+  overflow: hidden;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  border-left: solid 1px #CCCCCC;
+  direction: ltr;
+}
+
+.itemList {
+  align-items: center;
+  flex-grow: 1;
+  margin: 0em;
+}
+
+.itemList ul {
+  list-style-type: none;
+}
+
+.itemCard:hover {
+  background-color: #DDDDDD;
+}
+
+.itemName {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.errorMessage {
+  border: solid 1px rgba(255, 0, 0, 0.5);
+  border-radius: 3px;
+  background-color: rgba(255, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: red;
 }

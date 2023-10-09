@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
-import "./css/sideMenuStyle.css";
+import { Sidebar, Menu } from "react-pro-sidebar";
 import ItemList from "./components/ItemList";
 import CollapseMenuHeader from "./components/CollapseMenuHeader";
 
@@ -21,7 +20,7 @@ function SideMenu(props) {
         handleCollapseChange={handleCollapse}
         width="28rem"
       >
-        <div className="sideMenuContents">
+        <div>
           <Menu>
             <CollapseMenuHeader 
               collapsed={collapsed}

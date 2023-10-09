@@ -4,7 +4,7 @@ import { MenuItem } from "react-pro-sidebar";
 function CollapseMenuHeader(props) {
   // TO-DO: hide elements when menu is collapsed
   return (
-    <div className="header">
+    <div className="header vbox">
       <MenuItem
         icon={props.collapsed ? <FiChevronsLeft /> : <FiChevronsRight />}
         onClick={props.onCollapse}

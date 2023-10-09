@@ -20,7 +20,7 @@ function Toolbar(props) {
         </button>
       } modal nested>
         {close => (
-          <div className="card">
+          <div className="card popup">
             <div className="header">New crafting list</div>
             <div className="popupContent">
               <input
@@ -31,14 +31,19 @@ function Toolbar(props) {
                 value={newListName}
               />
             </div>
-            <div className="popupActions">
+            <div className="actionButtons">
               <button
                 className="confirmButton"
                 onClick={() => {
-                  props.onConfirmNewList(newListName);
-                  close();
+                  props.onConfirmNewList(newListName, close);
                 }}
               >Create new list</button>
+              <button
+                className="cancelButton"
+                onClick={() => {
+                  close();
+                }}
+              >Cancel</button>
             </div>
           </div>
         )}
